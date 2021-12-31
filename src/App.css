@@ -1,0 +1,297 @@
+.App {
+    text-align: center;
+    background: radial-gradient( hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    height: 940px;
+}
+
+* {
+    margin: auto;
+    font-family: "Barlow Semi Condensed";
+}
+
+.head {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid hsl(217, 16%, 45%);
+    width: 880px;
+    height: 200px;
+    top: 20px;
+    border-radius: 20px;
+}
+
+.text3 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -13%;
+    bottom: 15px;
+}
+
+.text3 div {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    width: 73.83px;
+    font-size: 50px;
+    height: 40px;
+}
+
+.score {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 210px;
+    height: 140px;
+    right: -13%;
+    border-radius: 20px;
+}
+
+.score span {
+    color: hsl(229, 64%, 46%);
+    position: relative;
+    font-size: 21px;
+    top: 15px;
+    letter-spacing: 5px;
+}
+
+.score b {
+    color: hsl(216, 15%, 32%);
+    font-size: 75px;
+}
+
+.rul {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 140px;
+    height: 50px;
+    background-color: unset;
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 20px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+}
+
+.treygol {
+    position: absolute;
+    top: 45%;
+    left: 42%;
+}
+
+.stone {
+    position: absolute;
+    top: 63%;
+    left: 45%;
+    padding: 60px;
+    border: 25px solid rgb(255, 0, 0);
+    border-radius: 100%;
+    box-shadow: 0px 7px rgb(150, 15, 15);
+    background-color: rgb(251, 253, 236);
+}
+
+.paper {
+    position: absolute;
+    top: 37%;
+    left: 37%;
+    padding: 60px;
+    border: 25px solid rgb(0, 38, 255);
+    border-radius: 100%;
+    box-shadow: 0px 7px rgb(27, 37, 141);
+    background-color: rgb(251, 253, 236);
+}
+
+.scissors {
+    position: absolute;
+    top: 37%;
+    left: 52%;
+    padding: 60px;
+    border: 25px solid rgb(255, 196, 0);
+    border-radius: 100%;
+    box-shadow: 0px 7px rgb(133, 127, 51);
+    background-color: rgb(251, 253, 236);
+}
+
+.scissors:hover {
+    background-color: rgb(251, 253, 236);
+    border: 25px solid rgb(255, 210, 87);
+}
+
+.stone:hover {
+    background-color: rgb(251, 253, 236);
+    border: 25px solid rgb(255, 90, 90);
+}
+
+.paper:hover {
+    background-color: rgb(251, 253, 236);
+    border: 25px solid rgb(39, 71, 255);
+}
+
+.paper:active {
+    background-color: rgb(251, 253, 236);
+    border: 25px solid rgb(0, 30, 199);
+}
+
+.stone:active {
+    background-color: rgb(251, 253, 236);
+    border: 25px solid rgb(216, 0, 0);
+}
+
+.scissors:active {
+    background-color: rgb(251, 253, 236);
+    border: 25px solid rgb(230, 168, 0);
+}
+
+.rules {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.list {
+    position: relative;
+    background-color: white;
+    width: 500px;
+    top: 200px;
+    right: -0.3%;
+    height: 550px;
+    z-index: 2;
+}
+
+.svg {
+    position: relative;
+    top: 170px;
+    right: -2px;
+}
+
+.sxg {
+    position: relative;
+    top: -250px;
+    left: 370px;
+}
+
+.textRules {
+    position: relative;
+    right: 200px;
+    top: 30px;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.paperChose {
+    position: absolute;
+    top: 47%;
+    left: 27%;
+    padding: 60px;
+    border: 25px solid rgb(0, 38, 255);
+    border-radius: 100%;
+    box-shadow: 0px 7px rgb(27, 37, 141);
+    background-color: rgb(251, 253, 236);
+    z-index: 1;
+}
+
+.span1 {
+    position: relative;
+    color: white;
+    top: 130px;
+    font-size: 40px;
+    left: -180px;
+}
+
+.span2 {
+    position: relative;
+    color: white;
+    top: 130px;
+    font-size: 40px;
+    left: 180px;
+}
+
+.paperE {
+    position: absolute;
+    top: 47%;
+    left: 59%;
+    padding: 60px;
+    border: 25px solid rgb(0, 38, 255);
+    border-radius: 100%;
+    box-shadow: 0px 7px rgb(27, 37, 141);
+    background-color: rgb(251, 253, 236);
+    z-index: 1;
+}
+
+.scissorsE {
+    position: absolute;
+    top: 47%;
+    left: 59%;
+    padding: 60px;
+    border: 25px solid rgb(255, 196, 0);
+    border-radius: 100%;
+    box-shadow: 0px 7px rgb(133, 127, 51);
+    background-color: rgb(251, 253, 236);
+    z-index: 1;
+}
+
+.stoneE {
+    position: absolute;
+    top: 47%;
+    left: 59%;
+    padding: 60px;
+    border: 25px solid rgb(255, 0, 0);
+    border-radius: 100%;
+    box-shadow: 0px 7px rgb(150, 15, 15);
+    background-color: rgb(251, 253, 236);
+    z-index: 1;
+}
+
+.but {
+    position: relative;
+    top: 260px;
+    right: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    background-color: unset;
+    border: 3px solid hsl(217, 16%, 45%);
+    color: white;
+    border-radius: 20px;
+}
+
+.stoneChose {
+    position: absolute;
+    top: 47%;
+    left: 27%;
+    padding: 60px;
+    border: 25px solid rgb(255, 0, 0);
+    border-radius: 100%;
+    box-shadow: 0px 7px rgb(163, 19, 19);
+    background-color: rgb(251, 253, 236);
+    z-index: 1;
+}
+
+.scissorsChose {
+    position: absolute;
+    top: 47%;
+    left: 27%;
+    padding: 60px;
+    border: 25px solid rgb(255, 196, 0);
+    border-radius: 100%;
+    box-shadow: 0px 7px rgb(133, 127, 51);
+    background-color: rgb(251, 253, 236);
+    z-index: 1;
+}
+
+.circle {
+    border: 23px solid rgba(255, 255, 255, 0.397);
+    border-radius: 100%;
+    width: 220px;
+    height: 220px;
+    z-index: 0;
+    top: 44.8%;
+    left: 57.65%;
+    position: absolute;
+}
