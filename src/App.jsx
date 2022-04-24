@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Chose from './Components/Chose';
 import Heder from './Components/Heder';
